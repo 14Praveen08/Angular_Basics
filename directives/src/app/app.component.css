@@ -1,0 +1,17 @@
+.underline{
+    border-bottom: 2px dotted yellowgreen;
+}
+
+.card{
+    
+    padding: 5px;
+    margin: 0.5px;
+    font-family: Impact;
+}
+
+.dark{
+    background-color: turquoise;
+    border-radius: 2px;
+}
+.alerts
+{font-style: italic};

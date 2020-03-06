@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1> Pipe Example</h1>
+  <p> Lowercase</p>
+  <div>{{title | lowercase}}</div>
+  <p> Uppercase</p>
+  <div>{{title | uppercase}}</div>
+  <p> Date</p>
+  <div>{{tday | date}}</div>
+  <div>{{tday | date:"dd/MM"}}</div>
+  <div>{{tday | date:"shortTime"}}</div>
+  <p>Money</p>
+  <div>{{20 | currency:"USD"}}</div>
+  <p>JSON</p>
+  <div>{{obj | json}}</div>
+  <p>Slice</p>
+  <div>{{numbers | slice:2:5}}</div>
+  <h4>Custom SQRT Pipe</h4>
+  <div>{{price | sqrt}}</div>
+</div>
+
+<router-outlet></router-outlet>

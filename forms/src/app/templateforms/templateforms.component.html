@@ -1,0 +1,11 @@
+<h1>Template Based Form</h1>
+<form #id="ngForm" (ngSubmit)="onSubmit(id)">
+    <label for="name" >Name</label>
+    <input type="text" id="name" name="name" ngModel>
+    <label for="regno" >Redg No.</label>
+    <input type="text" id="regno" name="regno" ngModel>
+    <label for="company" >Company</label>
+    <input type="text" id="company" name="company" ngModel>
+
+    <button type="submit">Submit</button>
+</form>

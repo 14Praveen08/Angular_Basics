@@ -1,0 +1,17 @@
+<p>firstcomponent works!</p>
+<p> {{serverID}}</p><!--Interpolation-->
+
+<!-- One Way Binding using [ ]-->
+<span [innerText]="ownumber"></span><br>
+<input type="text" [value]="owname">
+<br><br>
+Enter the Value:<input [(ngModel)]='data'>
+<br>
+<h1>{{data}} </h1>
+<br><br>
+<!--Event Binding-->
+<button (click)="onclick()">Submit</button>{{msg}}
+
+<div>
+    <p> Current time in component</p>{{time}}
+</div>

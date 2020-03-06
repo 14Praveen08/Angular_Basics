@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+<p [ngClass]="['underline']"> I am Praveen</p>
+<p [ngClass]="{card:true, dark:true}">I live in Chennai</p>
+<p [ngClass]="['alerts']">Warning</p>
+
+<!-- Structural Directives-->
+<div *ngFor='let d of directors'>{{d.title}}</div>
+<div *ngFor='let d of director'>{{d.author}}</div>
+<input type ="text" [(ngModel)]="tab">
+ <div [ngSwitch]="tab">
+    <div *ngSwitchCase='1'>One</div>
+    <div *ngSwitchCase='2'>Two</div>
+    <div *ngSwitchDefault>Wrong</div>
+</div> 
+<!--Custom Driectives-->
+<div appC> Custom Directive </div>
+<br>
+<appCD>Custom Directive as an Element</appCD>
+<router-outlet></router-outlet>
+
+

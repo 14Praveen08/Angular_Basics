@@ -1,0 +1,16 @@
+<h1>Reactive Based Form</h1>
+
+<form [formGroup]="reactive">
+    <label for="name" >Name
+    <input type="text" class="form-control" id="name" formControlName="name">
+    </label>    
+    <label for="regno" >Redg No.
+    <input type="text" class="form-control" id="regno" formControlName="regno">
+    </label>
+    <label for="company" >Company
+    <input type="text" class="form-control" id="company" formControlName="company">
+    </label>
+
+    
+</form>
+<button type="submit" (click)="submit()">Submit</button>
